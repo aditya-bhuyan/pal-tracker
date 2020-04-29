@@ -21,9 +21,7 @@ jobs:
         chmod 777 gradlew
         ./gradlew testMigrate
     - name: Build with Gradle
-      run:
-        chmod 777 gradlew
-        ./gradlew build
+      run: ./gradlew build
     - name: Publish artifact
       uses: actions/upload-artifact@v1
       with:
